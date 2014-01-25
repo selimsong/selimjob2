@@ -188,7 +188,7 @@
 		init: function()
 		{
 			this.sp.css('width', '100%');
-			this.sp.css('height', '85%');
+			this.sp.css('height', '100%');
 			this.sp.css('cursor', (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'pointer'));
 
 			$(this.canvas).css({cursor: (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'pointer')});
@@ -240,7 +240,8 @@
 			if(this.settings.image)
 			{
 				this.sp.css({backgroundImage: 'url('+this.settings.image+')',
-				          'background-repeat': 'no-repeat'});
+				          'background-repeat': 'no-repeat',
+						   'background-size':'100% 100%'});
 			}
 		},
 

@@ -51,6 +51,7 @@ STRUCTURE
 	clear: both;
 }
 #canvas {
+	background-color:none;
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -74,7 +75,9 @@ MEDIA QUERIES
 		width: auto;
 		float: none;
 	}
-
+     .compain_detail{
+		font-size:12px;
+	}
 
 }
 
@@ -84,8 +87,8 @@ MEDIA QUERIES
 	#header {
 		height: auto;
 	}
-	h1 {
-		font-size: 24px;
+	.compain_detail{
+		font-size:12px;
 	}
 
 
@@ -113,17 +116,24 @@ img{
     width: 20.6%;
 }
 .gua_area {
-    background: none repeat scroll 0 0 #EC6A00;
-    border-radius: 8px;
     cursor: pointer;
-    height: 43%;
+    height: 47%;
     position: absolute;
-    right: 17%;
-    top: 37.1%;
-    width: 61.8%;
+    top: 32%;
+    width: 44.3%;
+	left:7%;
 }
 audio, canvas, video {
     display: inline-block;
+}
+.compain_detail{
+    height: 20%;
+    position: absolute;
+    top: 52.9%;
+    width: 39%;
+	right:1%;
+    font-size:12px;
+	color:#FFF;
 }
 
 </style>
@@ -135,18 +145,27 @@ audio, canvas, video {
 
 	<div id="content">
         <img class="gua_bj01" src="bg.jpg" />
-	       <div class="gua_area" >
-               
-             <canvas id="canvas" class="gua_canvas" style="position: absolute; background-image: url(http://www.trop.cn/wechat/images/now_gua.png);" width="302" height="432"></canvas>
-             
+          <div class="gua_area" >
+             <canvas id="canvas" class="gua_canvas" style="position: absolute; background-image: url(gua.png);" width="209" height="316"></canvas>
             </div>
-            <img class="gua_hand" src="images/gua_hand.png" />
     
+        
+        <!--
+	       <div class="gua_area" >
+             <canvas id="canvas" class="gua_canvas" style="position: absolute; background-image: url(http://www.trop.cn/wechat/images/now_gua.png);" width="302" height="432"></canvas>
+                <img class="gua_hand" src="images/gua_hand.png" />
+            </div>
+         -->
+          <div class="compain_detail" >
+               亲爱的活动，我们要开 
+               亲爱的活动，我们要开 
+               亲爱的活动，我们要开 
+           </div>
     
     
 	</div>
 
-
+ 
 	
 
 

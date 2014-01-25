@@ -189,9 +189,9 @@
 		{
 			this.sp.css('width', '100%');
 			this.sp.css('height', '85%');
-			this.sp.css('cursor', (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'default'));
+			this.sp.css('cursor', (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'pointer'));
 
-			$(this.canvas).css({cursor: (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'default')});
+			$(this.canvas).css({cursor: (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'pointer')});
 			
 			this.canvas.width = this.settings.width;
 			this.canvas.height = this.settings.height;

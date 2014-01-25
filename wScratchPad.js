@@ -187,8 +187,7 @@
 
 		init: function()
 		{
-			this.sp.css('width', '100%');
-			this.sp.css('height', '100%');
+		
 			this.sp.css('cursor', (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'pointer'));
 
 			$(this.canvas).css({cursor: (this.settings.cursor ? 'url("' + this.settings.cursor + '"), default' : 'pointer')});

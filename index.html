@@ -4,9 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title></title>
-<!--[if lt IE 9]>
-	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<![endif]-->
+
 <style type="text/css">
 body {
 	font: 1em/150% Arial, Helvetica, sans-serif;
@@ -29,14 +27,16 @@ h1 {
 }
 #pagewrap {
 	width: 960px;
-	height:983px;
+	height:auto;
 	margin: 0px auto;
 }
 #header {
-	height: 180px;
+	height:983px;
 }
 #content {
-	float: left;
+	position:relative;
+	top:60%;
+	z-index:9;
 }
 
 #footer {
@@ -79,9 +79,15 @@ MEDIA QUERIES
 
 }
 
-/* border & guideline (you can ignore these) */
-#content {
-	
+.gua_area {
+    background: none repeat scroll 0 0 #EC6A00;
+    border-radius: 8px;
+    cursor: pointer;
+    height: 53%;
+    position: absolute;
+    right: 17%;
+    top: 37.1%;
+    width: 77.8%;
 }
 
 
@@ -92,20 +98,25 @@ MEDIA QUERIES
 <body>
 
 <div id="pagewrap">
-     <img src="bg.jpg"    />
-	<div id="header">
 
+	<div id="top" style="position:absolute;width: 77%;">
+       <img src="bg.jpg"  class="page_bg" name="bg"   />
+       <div class="gua_area">
+            <canvas class="gua_canvas" id="canvas" style="position: absolute; background: url(b.jpg) no-repeat ; " width="470" height="410"></canvas>
+       </div>
+       
+
+      
 	</div>
+    <div id="content">
+    
+      
 
-	<div id="content">
-		<h2></h2>
-		<p></p>
-
-	</div>
+     </div>
 
 
 	
-	<div id="footer">
+	<div id="buttom">
 	
 	</div>
 

@@ -31,20 +31,12 @@ STRUCTURE
 #pagewrap {
 	margin: 0px auto;
 }
-#header {
-	height: 180px;
-}
+
 #content {
 	position: absolute;
     width: 100%;
 }
-#sidebar {
-	width: 300px;
-	float: right;
-}
-#footer {
-	clear: both;
-}
+
 #canvas {
 	background-color:none;
     background-position: 0 0;
@@ -91,9 +83,7 @@ MEDIA QUERIES
 /* for 480px or less */
 @media screen and (max-width: 480px) {
 
-	#header {
-		height: auto;
-	}
+
 	.compain_detail{
 		font-size:12px;
 	}
@@ -147,7 +137,7 @@ audio, canvas, video {
 }
 .user{
 	cursor: pointer;
-	height:17%;
+	height:9%;
     position: absolute;
     top: 89.2%;
     width: 32%;
@@ -156,7 +146,7 @@ audio, canvas, video {
 }
 .win{
 	cursor: pointer;
-	height:17%;
+	height:9%;
     position: absolute;
     top: 89.2%;
     width: 32%;
@@ -175,11 +165,8 @@ audio, canvas, video {
 </style>
 <script type="text/javascript" src="./js/jquery.1.10.2.min.js"></script>
 </head>
-
 <body>
-
 <div id="pagewrap">
-
 	<div id="content">
         <img class="gua_bj01" src="bg.jpg"  />
           <div class="gua_area" id="wScratchPad" >
@@ -241,12 +228,6 @@ audio, canvas, video {
     
     
 	</div>
-
- 
-	
-
-
 </div>
-
 </body>
 </html>

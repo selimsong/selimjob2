@@ -240,9 +240,9 @@
 			{
 				this.sp.css({backgroundImage: 'url('+this.settings.image+')',
 				          'background-repeat': 'no-repeat',
-						   'background-size': 'cover',
-						   'width':'100%'
+						   'background-size': '100% auto'
 						   });
+			    this.sp.attr('class',   'gua_area');
 			}
 		},
 

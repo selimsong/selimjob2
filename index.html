@@ -163,7 +163,15 @@ audio, canvas, video {
 	right:13.7%;
 	
 }
-
+.tip{
+	display:none;
+	cursor: pointer;
+	height:7%;
+    position: absolute;
+    top: 50%;
+    width: 40%;
+	left:10%;
+}
 </style>
 <script type="text/javascript" src="./js/jquery.1.10.2.min.js"></script>
 </head>
@@ -175,12 +183,21 @@ audio, canvas, video {
 	<div id="content">
         <img class="gua_bj01" src="bg.jpg"  />
           <div class="gua_area" id="wScratchPad" >
-     
-            </div>
+          </div>
+          
+         <a href="javascript:reset_to();"><img id="try_again" class="tip" src="tip01.png" ></a>
+
       <script type="text/javascript" src="./test.js"></script>
       <script type="text/javascript">
            function clear() {
               sp.wScratchPad('clear');
+			  $("#try_again").show();
+           }
+		   function reset_to() {
+			  $("#try_again").hide();
+			  sp.wScratchPad('image', 'buttom.png');
+			  sp.wScratchPad('image2', 'gua.png');
+			  sp.wScratchPad('reset');
            }
 		   
            var sp = $("#wScratchPad").wScratchPad({
@@ -189,8 +206,8 @@ audio, canvas, video {
 			    image           : 'buttom.png',
 				image2           : 'gua.png',
 				scratchMove: function(e, percent) {
-					  if(percent > 70)
-					  this.clear();
+					  if(percent > 60)
+					  clear();
                 }
 			 
 			});

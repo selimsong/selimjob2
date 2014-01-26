@@ -179,24 +179,21 @@ audio, canvas, video {
             </div>
       <script type="text/javascript" src="./test.js"></script>
       <script type="text/javascript">
-	  if (screen.width < 600) {
-             //alert(screen.width);
-          }
-		  
-		   if (screen.width > 600) {
-            // alert(screen.width);
-          }
-   
-   
-            var sp = $("#wScratchPad").wScratchPad({
+           function clear() {
+              sp.wScratchPad('clear');
+           }
+		   
+           var sp = $("#wScratchPad").wScratchPad({
 			    width           : 209,             
                 height          : 316, 
 			    image           : 'buttom.png',
-				image2           : 'gua.png'
+				image2           : 'gua.png',
+				scratchMove: function(e, percent) {
+					  if(percent > 70)
+					  this.clear();
+                }
 			 
 			});
-			
-       
       </script>
         <!--
                <canvas id="canvas" ref="122" class="gua_canvas" style="position: absolute; background-image: url(gua.png);" width="209" height="316"></canvas>

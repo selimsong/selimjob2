@@ -272,7 +272,6 @@
 			
 			//draw single dot in case of a click without a move
 			$this.ctx.beginPath();
-			console.log(e.pageY);
 			$this.ctx.arc(e.pageX, e.pageY+70, $this.settings.size, 0, Math.PI*3, true);
 			$this.ctx.closePath();
 			$this.ctx.fill();

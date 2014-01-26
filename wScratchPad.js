@@ -240,7 +240,9 @@
 			{
 				this.sp.css({backgroundImage: 'url('+this.settings.image+')',
 				          'background-repeat': 'no-repeat',
-						   'background-size':'100% 100%'});
+						   'background-size': 'cover',
+						   'width':'100%'
+						   });
 			}
 		},
 

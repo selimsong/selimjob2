@@ -1,16 +1,3 @@
-/******************************************
- * Websanova.com
- *
- * Resources for web entrepreneurs
- *
- * @author          Websanova
- * @copyright       Copyright (c) 2012 Websanova.
- * @license         This wScratchPad jQuery plug-in is dual licensed under the MIT and GPL licenses.
- * @link            http://www.websanova.com
- * @github			http://github.com/websanova/wScratchPad
- * @version         Version 1.4.4
- *
- ******************************************/
 (function($)
 {
 	$.fn.wScratchPad = function(option, settings)
@@ -75,8 +62,8 @@
 
 	$.fn.wScratchPad.defaultSettings =
 	{
-		width			: 210,					// set width - best to match image width
-		height			: 100,					// set height - best to match image height
+		width			: 209,					// set width - best to match image width
+		height			: 316,					// set height - best to match image height
 		image			: 'images/slide1.jpg',	// set image path
 		image2			: null,					// set overlay image path - if set color is not used
 		color			: '#336699',			// set scratch color - if image2 is not set uses color
@@ -285,7 +272,8 @@
 			
 			//draw single dot in case of a click without a move
 			$this.ctx.beginPath();
-			$this.ctx.arc(e.pageX, e.pageY, $this.settings.size, 0, Math.PI*3, true);
+			console.log(e.pageY);
+			$this.ctx.arc(e.pageX, e.pageY+70, $this.settings.size, 0, Math.PI*3, true);
 			$this.ctx.closePath();
 			$this.ctx.fill();
 			

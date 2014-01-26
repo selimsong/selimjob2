@@ -51,7 +51,7 @@ STRUCTURE
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-	  position: absolute;
+	position: absolute;
 }
 
 /************************************************************************************
@@ -172,6 +172,14 @@ audio, canvas, video {
             </div>
       <script type="text/javascript" src="./test.js"></script>
       <script type="text/javascript">
+	  if (screen.width < 600) {
+             alert(1111);
+          }
+		  
+		   if (screen.width > 600) {
+             alert(222);
+          }
+   
    
             var sp = $("#wScratchPad").wScratchPad({
 			    width           : 209,             
